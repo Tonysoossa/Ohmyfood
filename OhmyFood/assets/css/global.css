@@ -1,6 +1,59 @@
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+:root {
+  --grey-bg: #f6f6f6;
+  --light-green: #99e2d0;
+  --green: #008766;
+  --light-blue: #89c8fa;
+  --blue: #003a68;
+  --violet: #9356dc;
 }
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Mobile device under 480px */
+@media (max-width: 479.98px) {
+  body {
+    background: white;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+  }
+
+  a {
+    all: unset;
+  }
+  
+  a:focus {
+    outline: revert;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .localisation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    background-color: #eaeaea;
+    box-shadow: 0px 4px 4px 0px #00000025;
+  }
+
+
+  .localisation p {
+    font-size: 16px;
+    margin-right: 10px;
+    font-weight: 500;
+  }
+}
