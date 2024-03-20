@@ -41,7 +41,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   bottom: 170px;
   left: 325px;
   width: 80px;
@@ -163,7 +162,8 @@
   .restaurant-img {
     width: 420px;
     height: 180px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
   }
@@ -181,6 +181,4 @@
     font-size: 17px;
     padding-left: 10px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
