@@ -10,26 +10,3 @@ $violet: #9356dc;
 // BTN
 
 $btn-radius: 25px;
-
-.logo {
-  width: 162px;
-  margin: 10px;
-}
-
-// HOMEPAGE
-
-//MENU
-
-.commande-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  font-weight: 500;
-  color: white;
-  width: 186px;
-  height: 40px;
-  border-radius: 25px;
-  border: none;
-  background: linear-gradient(#ff79da, $violet);
-}
