@@ -153,9 +153,6 @@ body {
   .menu-title {
     font-size: 18px;
     font-weight: 700;
-    padding-left: 12px;
-    padding-top: 12px;
-    padding-bottom: 5px;
   }
 
   .menu-title span {
@@ -164,14 +161,14 @@ body {
 
   .restaurants-menu p {
     font-size: 17px;
-    padding-left: 12px;
   }
 
+  // FIX
   .new {
     @include flex-center;
     position: absolute;
     top: 10px;
-    left: 75%;
+    right: 20px;
     width: 100%;
     max-width: 80px;
     height: 30px;
@@ -183,16 +180,35 @@ body {
     border-radius: 2px;
   }
 
+  .menu-text-heart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+  }
+
+  .menu-tex {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
   .heart-btn {
     @include flex-center-c;
-    position: absolute;
-    left: 325px;
-    bottom: 28px;
     width: 38px;
     height: 20px;
-    font-size: 22px;
+    font-size: 30px;
     color: red;
     border: none;
     background-color: transparent;
+  }
+
+  .heart {
+    border: 1px;
+  }
+
+
+  .heart-btn:focus {
+    color: blue;
   }
 }
