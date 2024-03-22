@@ -11,6 +11,12 @@ body {
     font-family: "Roboto", sans-serif;
   }
 
+  .logo {
+    width: 100%;
+    max-width: 162px;
+    margin: 10px;
+  }
+
   header {
     @include flex-center-c;
     width: 100%;
@@ -61,12 +67,12 @@ body {
   }
 
   .fonctionnement {
-    padding-bottom: 70px;
-    width: 100%;
+    padding: 40px 0 40px 0px;
   }
 
   .fonctionnement h1 {
-    padding: 40px 0px 40px 40px;
+    font-size: 24px;
+    padding: 0 0 20px 20px;
   }
 
   .fonctionnement-widgets {
@@ -75,24 +81,42 @@ body {
     max-width: 479px;
     box-sizing: border-box;
     gap: 15px;
-    padding: 10px;
+    padding: 15px 15px 15px 30px;
   }
 
   .fonctionnement-widget {
-    @include flex-center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     width: 100%;
-    max-width: 370px;
     height: 70px;
     border-radius: 20px;
-    background-color: lightcoral;
+    background-color: white;
     box-shadow: 0px 4px 4px 0px #00000015;
   }
 
   .fonc-box {
-    @include flex-center;
-    gap: 25px;
+  @include flex-center;
+    position: relative;
+    gap: 30px;
     font-size: 18px;
     font-weight: 500;
+    padding: 5px 0 0 40px;
+  }
+
+  .fonc-box i {
+    width: 20px;
+  }
+
+  .widget-num {
+    @include flex-center;
+    position: absolute;
+    left: 16.5px;
+    background-color: $violet;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
   }
 
   .fonc-icons {
@@ -107,21 +131,13 @@ body {
     color: $violet;
   }
 
-  .widget-num {
-    @include flex-center;
-    background-color: $violet;
-    color: white;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-  }
-
   .restaurant {
     background-color: $grey-bg;
+    padding: 40px 0 60px 0;
   }
 
   .restaurant-title {
-    padding: 40px 0px 20px 20px;
+    padding: 0px 0px 20px 20px;
   }
 
   .restaurants-widgets {
@@ -163,7 +179,6 @@ body {
     font-size: 17px;
   }
 
-  // FIX
   .new {
     @include flex-center;
     position: absolute;
@@ -187,10 +202,10 @@ body {
     padding: 12px 20px;
   }
 
-  .menu-tex {
+  .menu-text {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 3px;
   }
 
   .heart-btn {
@@ -203,12 +218,41 @@ body {
     background-color: transparent;
   }
 
-  .heart {
-    border: 1px;
-  }
-
-
   .heart-btn:focus {
     color: blue;
+  }
+
+  footer {
+    display: flex;
+    background-color: #353535;
+    color: white;
+    padding: 30px 0px 30px 30px;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  footer li {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .footer-icons {
+    font-size: 13px;
+    width: 10px;
+  }
+
+  .footer-logo {
+    width: 100%;
+    max-width: 138px;
+    padding-bottom: 10px;
+  }
+
+  .footer-list {
+    display: flex;
   }
 }
