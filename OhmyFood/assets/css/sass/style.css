@@ -199,6 +199,9 @@ body {
     font-size: 18px;
     font-weight: 700;
   }
+  .restaurant-menu-title span {
+    text-transform: uppercase;
+  }
   .menu-title span {
     text-transform: uppercase;
   }
@@ -308,7 +311,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 40px 20px;
     margin-right: 35px;
   }
   .menu-title button {
@@ -340,9 +343,9 @@ body {
     background-color: white;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.062745098);
     border-radius: 15px;
-    padding: 5px 5px 5px 5px;
+    padding: 10px 5px 10px 5px;
     width: 95%;
-    line-height: 25px;
+    line-height: 22px;
   }
   .choice-box h3 {
     font-size: 18px;
@@ -354,6 +357,7 @@ body {
     padding-left: 10px;
     padding-right: 45px;
     font-size: 15px;
+    font-weight: 300;
   }
   .choice-box .price {
     position: absolute;

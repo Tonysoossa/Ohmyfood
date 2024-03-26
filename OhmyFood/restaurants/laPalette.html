@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, inital-scale=1" />
-    <title>Ohmyfood</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La palette du goût</title>
     <link
       rel="stylesheet"
       type="text/css"
-      href="./assets/css/reset.css"
-      />
-      <link
+      href="/OhmyFood/assets/css/reset.css"
+    />
+    <link
       rel="stylesheet"
       type="text/css"
-      href="./assets/css/style.css"
-    />
-    <link rel="stylesheet" type="text/css" href="./assets/css/sass/style.css" 
+      href="/OhmyFood/assets/css/sass/style.css"
     />
     <link
       rel="stylesheet"
@@ -29,153 +27,104 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link type="text/html" href="./restaurants/laPalette.html" />
-    <link type="text/html" href="./restaurants/laNote.html" />
-    <link type="text/html" href="./restaurants/aLaFrancaise.html" />
-    <link type="text/html" href="./restaurants/leDelice.html"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <header>
-      <div>
+  <body class="menu-body">
+    <header class="menu-header">
+      <div class="menu-header-div">
+        <a href="/OhmyFood/index.html">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
         <img
-          src="./assets/images/logo/ohmyfood.png"
-          alt="logo Ohmyfood"
+          src="/OhmyFood/assets/images/logo/ohmyfood.png"
+          alt="ohmyfood logo"
           class="logo"
         />
       </div>
-      <div class="localisation">
-        <i class="fa-solid fa-location-dot"></i>
-        <a href="#" type="submit">
-          <p>Paris, Belleville</p>
-        </a>
-      </div>
     </header>
-    <nav>
-      <h1>Réservez le menu qui vous convient</h1>
-      <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-      <a href="#restaurant" class="default-btn">Explorer nos restaurants </a>
-    </nav>
-
     <main>
-      <section class="fonctionnement">
-        <h1>Fonctionnement</h1>
-        <div class="fonctionnement-widgets">
-          <a href="#" class="fonctionnement-widget">
-            <div class="widget-num">1</div>
-            <div class="fonc-box">
-              <i
-                class="fa-solid fa-mobile-screen-button fonc-icons grey-icon"
-              ></i>
-              <p class="fonc-widget-text">Choisissez un restaurant</p>
-            </div>
-          </a>
-          <a href="#" class="fonctionnement-widget">
-            <div class="widget-num">2</div>
-            <div class="fonc-box">
-              <i class="fa-solid fa-list-ul fonc-icons grey-icon"></i>
-              <p class="fonc-widget-text">Composez votre menu</p>
-            </div>
-          </a>
-          <a href="#" class="fonctionnement-widget">
-            <div class="widget-num">3</div>
-            <div class="fonc-box">
-              <i class="fa-solid fa-store fonc-icons store-icon"></i>
-              <p class="fonc-widget-text">Dégustez au restaurant</p>
-            </div>
-          </a>
+      <img
+        src="/OhmyFood/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        alt="Photo d'un plat du restaurant"
+        class="menu-img"
+      />
+      <section class="section-menu">
+        <div class="menu-title">
+          <h1 class="menu-h1">La palette du goût</h1>
+          <button class="heart-btn heart-btn-clicked" type="submit">
+            <i class="fa-sharp fa-solid fa-heart"></i>
+          </button>
+        </div>
+        <h2 class="choice-titles">entrées</h2>
+        <div class="title-border"></div>
+        <div class="choice">
+          <div class="choice-box">
+            <h3>Fricassée d'escargots</h3>
+            <p class="description">Au piment d'Espelette</p>
+            <p class="price">25€</p>
+          </div>
+          <div class="choice-box">
+            <h3>Foie gras de canard mi-cuit</h3>
+            <p class="description">Et ses copeaux de truffe noire</p>
+            <p class="price">35€</p>
+          </div>
+          <div class="choice-box">
+            <h3>Œuf au plat</h3>
+            <p class="description">Assaisonné à la truffe sur lit de caviar</p>
+            <p class="price">20€</p>
+          </div>
+        </div>
+        <h2 class="choice-titles">Plats</h2>
+        <div class="title-border"></div>
+        <div class="choice">
+          <div class="choice-box">
+            <h3>Filet de bœuf aux herbes</h3>
+            <p class="description">Accompagné de sa ribambelle de légumes</p>
+            <p class="price">40€</p>
+          </div>
+          <div class="choice-box">
+            <h3>Parmentier de queue de bœuf</h3>
+            <p class="description">À la truffe noire sur sa purée de panais</p>
+            <p class="price">35€</p>
+          </div>
+          <div class="choice-box">
+            <h3>Filet de turbot</h3>
+            <p class="description">Aux agrumes</p>
+            <p class="price">44€</p>
+          </div>
+        </div>
+        <h2 class="choice-titles">Desserts</h2>
+        <div class="title-border"></div>
+        <div class="choice">
+          <div class="choice-box">
+            <h3>Paris-Brest</h3>
+            <p class="description">Revisité</p>
+            <p class="price">18€</p>
+          </div>
+          <div class="choice-box">
+            <h3>Macaron au chocolat d'exception</h3>
+            <p class="description">Et glace à la vanille de Madagascar</p>
+            <p class="price">22€</p>
+          </div>
+          <div class="choice-box">
+            <h3>Mousse au chocolat</h3>
+            <p class="description">
+              Au piment d'Espelette et à la truffe noire
+            </p>
+            <p class="price">23€</p>
+          </div>
+        </div>
+        <div class="command-btn">
+          <a href="#" class="default-btn">Commander</a>
         </div>
       </section>
-
-      <section id="restaurant" class="restaurant">
-        <h1 class="restaurant-title">Restaurants</h1>
-        <div class="restaurants-widgets">
-          <a
-            href="/OhmyFood/restaurants/laPalette.html"
-            class="restaurants-widgets-links"
-          >
-            <div class="restaurants-menu">
-              <img
-                src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="Photo montrant un plat"
-                class="restaurant-img"
-              />
-              <div class="new">Nouveau</div>
-              <div class="menu-text-heart">
-                <div class="menu-text">
-                  <h2 class="restaurant-menu-title">La palette du goût</h2>
-                  <p>Ménilmontant</p>
-                </div>
-                <button class="heart-btn heart-btn-clicked" type="submit">
-                  <i class="fa-sharp fa-solid fa-heart heart"></i>
-                </button>
-              </div>
-            </div>
-          </a>
-          <a
-            href="/OhmyFood/restaurants/laNote.html"
-            class="restaurants-widgets-links"
-          >
-            <div class="restaurants-menu">
-              <img
-                src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                alt="Photo montrant un plat vue de dessus"
-                class="restaurant-img"
-              />
-              <div class="new">Nouveau</div>
-              <div class="menu-text-heart">
-                <div class="menu-text">
-                  <h2 class="restaurant-menu-title">La note enchantée</h2>
-                  <p>Charonne</p>
-                </div>
-                <button class="heart-btn heart-btn-clicked" type="submit">
-                  <i class="fa-sharp fa-solid fa-heart"></i>
-                </button>
-              </div>
-            </div>
-          </a>
-          <a href="/OhmyFood/restaurants/aLaFrancaise.html" class="restaurants-widgets-links">
-
-            <div class="restaurants-menu">
-              <img
-              src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-              alt="Photo montrant un plat"
-              class="restaurant-img"
-              />
-              <div class="menu-text-heart">
-                <div class="menu-text">
-                  <h2 class="restaurant-menu-title"><span>à</span> la française</h2>
-                  <p>Cité Rouge</p>
-                </div>
-                <button class="heart-btn heart-btn-clicked" type="submit">
-                  <i class="fa-sharp fa-solid fa-heart"></i>
-                </button>
-              </div>
-            </div>
-          </a>
-            <a href="/OhmyFood/restaurants/leDelice.html" class="restaurants-widgets-links">
-
-              <div class="restaurants-menu">
-                <img
-                src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                alt="Photo montrant un plat"
-                class="restaurant-img"
-                />
-                <div class="menu-text-heart">
-                  <div class="menu-text">
-                    <h2 class="restaurant-menu-title">Le délice des sens</h2>
-                    <p>Folie-Méricourt</p>
-                  </div>
-                  <button class="heart-btn heart-btn-clicked" type="submit">
-                    <i class="fa-sharp fa-solid fa-heart"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </a>
-      </section>
     </main>
-
-    <footer>
+    <footer class="menu-footer">
       <div class="footer-list">
         <ul>
           <li>

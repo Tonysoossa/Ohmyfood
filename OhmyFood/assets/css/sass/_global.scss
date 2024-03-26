@@ -173,6 +173,9 @@ body {
   .restaurant-menu-title {
     font-size: 18px;
     font-weight: 700;
+    span {
+      text-transform: uppercase;
+    }
   }
 
   .menu-title span {
@@ -245,5 +248,4 @@ body {
   .footer-list {
     display: flex;
   }
-
 }
