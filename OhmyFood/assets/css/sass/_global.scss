@@ -96,7 +96,7 @@ body {
   }
 
   .fonc-box {
-  @include flex-center;
+    @include flex-center;
     position: relative;
     gap: 30px;
     font-size: 18px;
@@ -148,6 +148,10 @@ body {
     gap: 15px;
   }
 
+  .restaurants-widgets-links {
+    width: 100%;
+  }
+
   .restaurants-menu {
     display: flex;
     position: relative;
@@ -166,7 +170,7 @@ body {
     border-top-left-radius: 15px;
   }
 
-  .menu-title {
+  .restaurant-menu-title {
     font-size: 18px;
     font-weight: 700;
   }
@@ -208,20 +212,6 @@ body {
     gap: 3px;
   }
 
-  .heart-btn {
-    @include flex-center-c;
-    width: 38px;
-    height: 20px;
-    font-size: 30px;
-    color: red;
-    border: none;
-    background-color: transparent;
-  }
-
-  .heart-btn:focus {
-    color: blue;
-  }
-
   footer {
     display: flex;
     background-color: #353535;
@@ -255,4 +245,5 @@ body {
   .footer-list {
     display: flex;
   }
+
 }
