@@ -12,28 +12,51 @@
   background: linear-gradient($pink, $violet);
 }
 
-.heart-btn {
-  @include flex-center-c;
-  width: 38px;
-  height: 20px;
-  font-size: 30px;
-  color: red;
-  border: none;
-  background-color: transparent;
+.restaurants-menu {
+  .heart-btn {
+    position: absolute;
+    right: 20px;
+    width: 50px;
+    height: 35px;
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    .empty-heart:focus {
+      display: none;
+    }
+    .full-heart {
+      display: none;
+      color: transparent;
+      background-clip: text;
+      background-image: linear-gradient($pink, $violet);
+    }
+    .full-heart:focus {
+      display: block;
+    }
+  }
 }
 
-.heart-btn:focus {
-  color: blue;
+.menu-title {
+  .heart-btn {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    width: 50px;
+    height: 35px;
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    .empty-heart:focus {
+      display: none;
+    }
+    .full-heart {
+      display: none;
+      color: transparent;
+      background-clip: text;
+      background-image: linear-gradient($pink, $violet);
+    }
+    .full-heart:focus {
+      display: block;
+    }
+  }
 }
-
-.full-heart {
-  height: 35px;
-  color: red;
-}
-
-
-.empty-heart {
-  height: 35px;
-}
-
-//MENU

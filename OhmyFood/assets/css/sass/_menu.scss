@@ -62,45 +62,6 @@
     }
   }
 
-  .heart-switch-empty::before {
-    display: block;
-  }
-
-  .heart-switch-empty::after {
-    display: block;
-  }
-
-  .heart-switch-full::before {
-    display: none;
-  }
-
-  .heart-switch-full::after {
-    display: block;
-  }
-
-  // .heart-switch::after {
-  //   .full-heart {
-  //     display: block;
-  //   }
-  //   .empty-heart {
-  //     display: none;
-  //   }
-  // }
-
-  // .heart-switch::before {
-  //   .full-heart {
-  //     display: none;
-  //   }
-  //   .empty-heart {
-  //     display: block;
-  //   }
-  // }
-
-  .menu-title button {
-    position: absolute;
-    right: 20px;
-  }
-
   .choice-titles {
     padding: 0 0 5px 15px;
     text-transform: uppercase;

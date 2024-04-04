@@ -12,30 +12,51 @@
   background: linear-gradient(#ff79da, #9356dc);
 }
 
-.heart-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 38px;
-  height: 20px;
+.restaurants-menu .heart-btn {
+  position: absolute;
+  right: 20px;
+  width: 50px;
+  height: 35px;
   font-size: 30px;
-  color: red;
   border: none;
   background-color: transparent;
 }
-
-.heart-btn:focus {
-  color: blue;
+.restaurants-menu .heart-btn .empty-heart:focus {
+  display: none;
+}
+.restaurants-menu .heart-btn .full-heart {
+  display: none;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(#ff79da, #9356dc);
+}
+.restaurants-menu .heart-btn .full-heart:focus {
+  display: block;
 }
 
-.full-heart {
+.menu-title .heart-btn {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 50px;
   height: 35px;
-  color: red;
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
 }
-
-.empty-heart {
-  height: 35px;
+.menu-title .heart-btn .empty-heart:focus {
+  display: none;
+}
+.menu-title .heart-btn .full-heart {
+  display: none;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(#ff79da, #9356dc);
+}
+.menu-title .heart-btn .full-heart:focus {
+  display: block;
 }
 
 body {
@@ -168,11 +189,19 @@ body {
     color: #9356dc;
   }
   .restaurant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
     background-color: #f6f6f6;
     padding: 40px 0 60px 0;
   }
   .restaurant-title {
-    padding: 0px 0px 20px 20px;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    padding: 20px;
   }
   .restaurants-widgets {
     display: flex;
@@ -180,9 +209,9 @@ body {
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 90%;
     gap: 15px;
+    padding-top: 50px;
   }
   .restaurants-widgets-links {
     width: 100%;
@@ -329,22 +358,6 @@ body {
     right: 20px;
     top: 10px;
     border: none;
-  }
-  .heart-switch-empty::before {
-    display: block;
-  }
-  .heart-switch-empty::after {
-    display: block;
-  }
-  .heart-switch-full::before {
-    display: none;
-  }
-  .heart-switch-full::after {
-    display: block;
-  }
-  .menu-title button {
-    position: absolute;
-    right: 20px;
   }
   .choice-titles {
     padding: 0 0 5px 15px;

@@ -132,20 +132,25 @@ body {
   }
 
   .restaurant {
+    @include flex-center-c;
+    position: relative;
     background-color: $grey-bg;
     padding: 40px 0 60px 0;
   }
 
   .restaurant-title {
-    padding: 0px 0px 20px 20px;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    padding: 20px;
   }
 
   .restaurants-widgets {
     @include flex-center-c;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 90%;
     gap: 15px;
+    padding-top: 50px;
   }
 
   .restaurants-widgets-links {
