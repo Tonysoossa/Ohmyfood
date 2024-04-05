@@ -21,9 +21,6 @@
   border: none;
   background-color: transparent;
 }
-.restaurants-menu .heart-btn .empty-heart:focus {
-  display: none;
-}
 .restaurants-menu .heart-btn .full-heart {
   display: none;
   color: transparent;
@@ -31,8 +28,12 @@
           background-clip: text;
   background-image: linear-gradient(#ff79da, #9356dc);
 }
-.restaurants-menu .heart-btn .full-heart:focus {
+
+.heart-btn:focus .full-heart {
   display: block;
+}
+.heart-btn:focus .empty-heart {
+  display: none;
 }
 
 .menu-title .heart-btn {
@@ -303,6 +304,20 @@ body {
     display: flex;
   }
 }
+@media (min-width: 480px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo {
+    width: 200px;
+  }
+  img {
+    width: 400px;
+  }
+}
 @media (max-width: 479.98px) {
   .menu-body {
     display: flex;
@@ -379,6 +394,15 @@ body {
     padding: 15px 5px 40px 5px;
     gap: 10px;
   }
+  .choice-btn {
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    width: 100%;
+  }
   .choice-box {
     position: relative;
     background-color: white;
@@ -405,16 +429,5 @@ body {
     bottom: 10px;
     right: 20px;
     font-weight: 700;
-  }
-  .command-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 40px;
-  }
-  .menu-footer {
-    position: relative;
-    top: -20px;
-    margin-bottom: -20px;
   }
 }/*# sourceMappingURL=style.css.map */

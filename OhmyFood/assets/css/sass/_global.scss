@@ -254,3 +254,19 @@ body {
     display: flex;
   }
 }
+
+// Desktop device //
+
+@media (min-width: 480px) {
+  body {
+    @include flex-center-c;
+  }
+.logo {
+  width: 200px;
+}
+
+img {
+  width: 400px;
+}
+
+}

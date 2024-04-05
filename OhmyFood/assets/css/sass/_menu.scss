@@ -82,6 +82,16 @@
     gap: 10px;
   }
 
+  .choice-btn {
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    width: 100%;
+  }
+
   .choice-box {
     position: relative;
     background-color: white;
@@ -110,14 +120,43 @@
     }
   }
 
-  .command-btn {
-    @include flex-center;
-    padding-bottom: 40px;
-  }
+  // .choice-box {
+  //   position: relative;
+  //   background-color: white;
+  //   border: none;
+  //   box-shadow: 0px 4px 4px 0px #00000010;
+  //   border-radius: 15px;
+  //   padding: 10px 5px 10px 5px;
+  //   width: 95%;
+  //   line-height: 22px;
+  //   h3 {
+  //     font-size: 18px;
+  //     font-weight: 500;
+  //     padding-left: 10px;
+  //     padding-right: 35px;
+  //   }
+  //   .description {
+  //     padding-left: 10px;
+  //     padding-right: 45px;
+  //     font-size: 15px;
+  //     font-weight: 300;
+  //   }
+  //   .price {
+  //     position: absolute;
+  //     bottom: 10px;
+  //     right: 20px;
+  //     font-weight: 700;
+  //   }
+  // }
 
-  .menu-footer {
-    position: relative;
-    top: -20px;
-    margin-bottom: -20px;
-  }
+  // .command-btn {
+  //   @include flex-center;
+  //   padding-bottom: 40px;
+  // }
+
+  // .menu-footer {
+  //   position: relative;
+  //   top: -20px;
+  //   margin-bottom: -20px;
+  // }
 }

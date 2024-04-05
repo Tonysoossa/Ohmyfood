@@ -1,9 +1,12 @@
-bien organiser les class/sous-class le sass
+bien re-organiser les class/sous-class le sass
 
-use : transition; infininite ?;
+transition on menu widgets : https://www.youtube.com/watch?v=cH0TC9gWiAg
 
 voir brief creatif
 
 simuler un loader apres avoir selectionner un menu 
 
 for menus, on hover align description and add '...' if the text width is to long
+
+
+animation vignette en hover
