@@ -1,162 +1,130 @@
 // All menus css
 
-@media (max-width: 479.98px) {
-  .menu-body {
-    display: flex;
-    flex-direction: column;
-    padding-top: 5px;
-    background: white;
-    font-family: "Roboto", sans-serif;
-    width: 100%;
-    max-width: 479px;
-  }
+.main-menu {
+  background-color: $grey-bg;
+  padding-bottom: 15px;
+}
 
-  .menu-header-div {
-    display: flex;
-    align-items: center;
-    font-size: 22px;
-  }
+.menu-body {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  background: white;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 479px;
+}
 
-  .menu-header-div a {
+.menu-header-div {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+
+.menu-header-div a {
+  position: absolute;
+  left: 20px;
+}
+
+.menu-h1 {
+  font-size: 28px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Shrikhand", sans-serif;
+  padding-right: 20px;
+}
+
+.section-menu {
+  position: relative;
+  bottom: 20px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: $grey-bg;
+  margin-top: -20px;
+}
+
+.menu-img {
+  display: flex;
+  height: 280px;
+  object-fit: cover;
+  width: 100%;
+  max-width: 479px;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 20px 40px 20px;
+  margin-right: 40px;
+  button,
+  svg {
     position: absolute;
-    left: 20px;
-  }
-
-  .menu-h1 {
-    font-size: 28px;
-    font-weight: 400;
-    font-style: italic;
-    font-family: "Shrikhand", sans-serif;
-    padding-right: 20px;
-  }
-
-  .section-menu {
-    position: relative;
-    bottom: 20px;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    background-color: $grey-bg;
-    margin-top: -20px;
-  }
-
-  .menu-img {
-    display: flex;
-    height: 280px;
-    object-fit: cover;
-    width: 100%;
-    max-width: 479px;
-  }
-
-  .menu-title {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px 20px 40px 20px;
-    margin-right: 40px;
-    button,
-    svg {
-      position: absolute;
-      right: 20px;
-      top: 10px;
-      border: none;
-    }
-  }
-
-  .choice-titles {
-    padding: 0 0 5px 15px;
-    text-transform: uppercase;
-    font-weight: 300;
-    width: 20px;
-  }
-
-  .title-border {
-    position: absolute;
-    width: 40px;
-    border-bottom: solid 3px #99e2d0;
-    left: 15px;
-  }
-
-  .choice {
-    @include flex-center-c;
-    padding: 15px 5px 40px 5px;
-    gap: 10px;
-  }
-
-  .choice-btn {
-    background: none;
-    color: inherit;
+    right: 20px;
+    top: 10px;
     border: none;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-    width: 100%;
   }
+}
 
-  .choice-box {
-    position: relative;
-    background-color: white;
-    box-shadow: 0px 4px 4px 0px #00000010;
-    border-radius: 15px;
-    padding: 10px 5px 10px 5px;
-    width: 95%;
-    line-height: 22px;
-    h3 {
-      font-size: 18px;
-      font-weight: 500;
-      padding-left: 10px;
-      padding-right: 35px;
-    }
-    .description {
-      padding-left: 10px;
-      padding-right: 45px;
-      font-size: 15px;
-      font-weight: 300;
-    }
-    .price {
-      position: absolute;
-      bottom: 10px;
-      right: 20px;
-      font-weight: 700;
-    }
+.choice-titles {
+  padding: 0 0 5px 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  width: 20px;
+}
+
+.title-border {
+  position: absolute;
+  width: 40px;
+  border-bottom: solid 3px #99e2d0;
+  left: 15px;
+}
+
+.choice {
+  @include flex-center-c;
+  padding: 15px 5px 40px 5px;
+  gap: 10px;
+}
+
+.choice-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px #00000010;
+  border-radius: 15px;
+  padding: 10px 5px 10px 15px;
+  width: 95%;
+  line-height: 22px;
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
   }
+  .description {
+    font-size: 15px;
+    font-weight: 300;
+    padding-right: 50px;
+  }
+  .price {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-weight: 700;
+  }
+}
 
-  // .choice-box {
-  //   position: relative;
-  //   background-color: white;
-  //   border: none;
-  //   box-shadow: 0px 4px 4px 0px #00000010;
-  //   border-radius: 15px;
-  //   padding: 10px 5px 10px 5px;
-  //   width: 95%;
-  //   line-height: 22px;
-  //   h3 {
-  //     font-size: 18px;
-  //     font-weight: 500;
-  //     padding-left: 10px;
-  //     padding-right: 35px;
-  //   }
-  //   .description {
-  //     padding-left: 10px;
-  //     padding-right: 45px;
-  //     font-size: 15px;
-  //     font-weight: 300;
-  //   }
-  //   .price {
-  //     position: absolute;
-  //     bottom: 10px;
-  //     right: 20px;
-  //     font-weight: 700;
-  //   }
-  // }
+.command-btn {
+  @include flex-center;
+}
 
-  // .command-btn {
-  //   @include flex-center;
-  //   padding-bottom: 40px;
-  // }
-
-  // .menu-footer {
-  //   position: relative;
-  //   top: -20px;
-  //   margin-bottom: -20px;
-  // }
+@media (max-width: 479.98px) {
 }

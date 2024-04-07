@@ -5,268 +5,266 @@ body {
 }
 
 /* Mobile device under 480px */
-@media (max-width: 479.98px) {
-  body {
-    background: white;
-    font-family: "Roboto", sans-serif;
-  }
 
-  .logo {
-    width: 100%;
-    max-width: 162px;
-    margin: 10px;
-  }
+body {
+  background: white;
+  font-family: "Roboto", sans-serif;
+}
 
-  header {
-    @include flex-center-c;
-    width: 100%;
-    max-width: 479.98px;
-  }
+.logo {
+  width: 100%;
+  max-width: 162px;
+  margin: 10px;
+}
 
-  h1 {
-    font-size: 24px;
-    font-weight: 700;
-  }
+header {
+  @include flex-center-c;
+  width: 100%;
+  max-width: 479.98px;
+}
 
-  .localisation {
-    @include flex-center;
-    gap: 15px;
-    width: 100%;
-    height: 50px;
-    background-color: #eaeaea;
-    box-shadow: 0px 4px 4px 0px #00000025;
-  }
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
 
-  .localisation p {
-    font-size: 16px;
-    margin-right: 10px;
-    font-weight: 500;
-  }
+.localisation {
+  @include flex-center;
+  gap: 15px;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(0deg, #eaeaea 85%, rgb(0, 0, 0) 170%);
+  filter: drop-shadow(0px 10px 5px #00000045);
+}
 
-  nav {
-    @include flex-center-c;
-    background-color: $grey-bg;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    gap: 20px;
-  }
+.localisation p {
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: 500;
+}
 
-  nav h1 {
-    width: 100%;
-    max-width: 250px;
-    text-align: center;
-  }
+nav {
+  @include flex-center-c;
+  background-color: $grey-bg;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  gap: 20px;
+}
 
-  nav p {
-    width: 100%;
-    max-width: 280px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 300;
-    padding-bottom: 10px;
-  }
+nav h1 {
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+}
 
-  .fonctionnement {
-    padding: 40px 0 40px 0px;
-  }
+nav p {
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
 
-  .fonctionnement h1 {
-    font-size: 24px;
-    padding: 0 0 20px 20px;
-  }
+.fonctionnement {
+  padding: 40px 0 40px 0px;
+}
 
-  .fonctionnement-widgets {
-    @include flex-center-c;
-    width: 100%;
-    max-width: 479px;
-    box-sizing: border-box;
-    gap: 15px;
-    padding: 15px 15px 15px 30px;
-  }
+.fonctionnement h1 {
+  font-size: 24px;
+  padding: 0 0 20px 20px;
+}
 
-  .fonctionnement-widget {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    height: 70px;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 4px 4px 0px #00000015;
-  }
+.fonctionnement-widgets {
+  @include flex-center-c;
+  width: 100%;
+  max-width: 479px;
+  box-sizing: border-box;
+  gap: 15px;
+  padding: 15px 15px 15px 30px;
+}
 
-  .fonc-box {
-    @include flex-center;
-    position: relative;
-    gap: 30px;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 5px 0 0 40px;
-  }
+.fonctionnement-widget {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 70px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px #00000015;
+}
 
-  .fonc-box i {
-    width: 20px;
-  }
+.fonc-box {
+  @include flex-center;
+  position: relative;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 0 0 40px;
+}
 
-  .widget-num {
-    @include flex-center;
-    position: absolute;
-    left: 16.5px;
-    background-color: $violet;
-    color: white;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-  }
+.fonc-box i {
+  width: 20px;
+}
 
-  .fonc-icons {
-    font-size: 18px;
-  }
+.widget-num {
+  @include flex-center;
+  position: absolute;
+  left: 16.5px;
+  background-color: $violet;
+  color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
 
-  .grey-icon {
-    color: #7e7e7e;
-  }
+.fonc-icons {
+  font-size: 18px;
+}
 
-  .store-icon {
-    color: $violet;
-  }
+.grey-icon {
+  color: #7e7e7e;
+}
 
-  .restaurant {
-    @include flex-center-c;
-    position: relative;
-    background-color: $grey-bg;
-    padding: 40px 0 60px 0;
-  }
+.store-icon {
+  color: $violet;
+}
 
-  .restaurant-title {
-    position: absolute;
-    top: 30px;
-    left: 5px;
-    padding: 20px;
-  }
+.restaurant {
+  @include flex-center-c;
+  position: relative;
+  background-color: $grey-bg;
+  padding: 40px 0 60px 0;
+}
 
-  .restaurants-widgets {
-    @include flex-center-c;
-    box-sizing: border-box;
-    width: 90%;
-    gap: 15px;
-    padding-top: 50px;
-  }
+.restaurant-title {
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  padding: 20px;
+}
 
-  .restaurants-widgets-links {
-    width: 100%;
-  }
+.restaurants-widgets {
+  @include flex-center-c;
+  box-sizing: border-box;
+  width: 90%;
+  gap: 15px;
+  padding-top: 50px;
+}
 
-  .restaurants-menu {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    width: 100%;
-    max-width: 420px;
-    height: 245px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 4px 0px #00000010;
-  }
+.restaurants-widgets-links {
+  width: 100%;
+}
 
-  .restaurant-img {
-    height: 180px;
-    object-fit: cover;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-  }
+.restaurants-menu {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  max-width: 420px;
+  height: 245px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px #00000010;
+}
 
-  .restaurant-menu-title {
-    font-size: 18px;
-    font-weight: 700;
-    span {
-      text-transform: uppercase;
-    }
-  }
+.restaurant-img {
+  height: 180px;
+  object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
 
-  .menu-title span {
+.restaurant-menu-title {
+  font-size: 18px;
+  font-weight: 700;
+  span {
     text-transform: uppercase;
   }
+}
 
-  .restaurants-menu p {
-    font-size: 17px;
-  }
+.menu-title span {
+  text-transform: uppercase;
+}
 
-  .new {
-    @include flex-center;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    width: 100%;
-    max-width: 80px;
-    height: 30px;
-    color: $green;
-    background-color: $light-green;
-    font-size: 14px;
-    font-weight: 500;
-    border: none;
-    border-radius: 2px;
-  }
+.restaurants-menu p {
+  font-size: 17px;
+}
 
-  .menu-text-heart {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 20px;
-  }
+.new {
+  @include flex-center;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 100%;
+  max-width: 80px;
+  height: 30px;
+  color: $green;
+  background-color: $light-green;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 2px;
+}
 
-  .menu-text {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-  }
+.menu-text-heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
 
-  footer {
-    display: flex;
-    background-color: #353535;
-    color: white;
-    padding: 30px 0px 30px 30px;
-  }
+.menu-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
 
-  footer ul {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
+footer {
+  display: flex;
+  background-color: #353535;
+  color: white;
+  padding: 30px 0px 30px 30px;
+}
 
-  footer li {
-    display: flex;
-    gap: 10px;
-    font-size: 16px;
-  }
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
 
-  .footer-icons {
-    font-size: 13px;
-    width: 10px;
-  }
+footer li {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+}
 
-  .footer-logo {
-    width: 100%;
-    max-width: 138px;
-    padding-bottom: 10px;
-  }
+.footer-icons {
+  font-size: 13px;
+  width: 10px;
+}
 
-  .footer-list {
-    display: flex;
-  }
+.footer-logo {
+  width: 100%;
+  max-width: 138px;
+  padding-bottom: 10px;
+}
+
+.footer-list {
+  display: flex;
 }
 
 // Desktop device //
 
-@media (min-width: 480px) {
+@media (min-width: 480.08px) {
   body {
     @include flex-center-c;
   }
-.logo {
-  width: 200px;
-}
+  .logo {
+    width: 200px;
+  }
 
-img {
-  width: 400px;
-}
-
+  img {
+    width: 400px;
+  }
 }

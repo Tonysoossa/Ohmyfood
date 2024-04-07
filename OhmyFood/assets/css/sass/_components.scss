@@ -28,18 +28,16 @@
       background-image: linear-gradient($pink, $violet);
     }
   }
-}
+  .heart-btn:focus {
+    .full-heart {
+      display: block;
+    }
 
-.heart-btn:focus {
-  .full-heart {
-    display: block;
+    .empty-heart {
+      display: none;
+    }
   }
-
-  .empty-heart {
-    display: none;
-  }
 }
-
 
 .menu-title {
   .heart-btn {
@@ -51,17 +49,19 @@
     font-size: 30px;
     border: none;
     background-color: transparent;
-    .empty-heart:focus {
-      display: none;
-    }
     .full-heart {
       display: none;
       color: transparent;
       background-clip: text;
       background-image: linear-gradient($pink, $violet);
     }
-    .full-heart:focus {
+  }
+  .heart-btn:focus {
+    .full-heart {
       display: block;
+    }
+    .empty-heart {
+      display: none;
     }
   }
 }
