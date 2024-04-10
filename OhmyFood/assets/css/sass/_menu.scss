@@ -8,11 +8,8 @@
 .menu-body {
   display: flex;
   flex-direction: column;
-  padding-top: 5px;
   background: white;
   font-family: "Roboto", sans-serif;
-  width: 100%;
-  max-width: 479px;
 }
 
 .menu-header-div {
@@ -48,13 +45,9 @@
   height: 280px;
   object-fit: cover;
   width: 100%;
-  max-width: 479px;
 }
 
 .menu-title {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   padding: 20px 20px 40px 20px;
   margin-right: 40px;
   button,
@@ -91,7 +84,6 @@
   flex-direction: column;
   justify-content: center;
 
-
   background: none;
   color: inherit;
   border: none;
@@ -126,5 +118,22 @@
   @include flex-center;
 }
 
-@media (max-width: 479.98px) {
+@media (min-width: 480.08px) {
+  .section-menu {
+    width: 70%;
+    .menu-title {
+      display: flex;
+      justify-content: center;
+      padding-right: 20px ;
+      .heart-btn {
+        left: 510px;
+      }
+    }
+    .choice-titles {
+      padding-left: 25px;
+    }
+    .title-border {
+      left: 25px;
+    }
+  }
 }

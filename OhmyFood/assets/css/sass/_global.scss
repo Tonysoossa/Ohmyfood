@@ -1,12 +1,8 @@
-body {
-  display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-}
-
 /* Mobile device under 480px */
 
 body {
+  display: flex;
+  flex-direction: column;
   background: white;
   font-family: "Roboto", sans-serif;
 }
@@ -14,13 +10,12 @@ body {
 .logo {
   width: 100%;
   max-width: 162px;
-  margin: 10px;
+  margin: 20px;
 }
 
 header {
   @include flex-center-c;
   width: 100%;
-  max-width: 479.98px;
 }
 
 h1 {
@@ -46,33 +41,31 @@ h1 {
 nav {
   @include flex-center-c;
   background-color: $grey-bg;
+  width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
   gap: 20px;
-}
-
-nav h1 {
-  width: 100%;
-  max-width: 250px;
-  text-align: center;
-}
-
-nav p {
-  width: 100%;
-  max-width: 280px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 300;
-  padding-bottom: 10px;
+  h1 {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+  p {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 10px;
+  }
 }
 
 .fonctionnement {
   padding: 40px 0 40px 0px;
-}
-
-.fonctionnement h1 {
-  font-size: 24px;
-  padding: 0 0 20px 20px;
+  h1 {
+    font-size: 24px;
+    padding: 10px 0 20px 20px;
+  }
 }
 
 .fonctionnement-widgets {
@@ -80,8 +73,8 @@ nav p {
   width: 100%;
   max-width: 479px;
   box-sizing: border-box;
-  gap: 15px;
-  padding: 15px 15px 15px 30px;
+  gap: 30px;
+  padding: 0 15px 15px 30px;
 }
 
 .fonctionnement-widget {
@@ -264,7 +257,92 @@ footer li {
     width: 200px;
   }
 
-  img {
-    width: 400px;
+  .localisation {
+    filter: none;
+    background: #eaeaea;
+  }
+
+  nav {
+    h1 {
+      max-width: 100%;
+      font-size: 40px;
+    }
+    p {
+      max-width: 100%;
+    }
+  }
+
+  main {
+    @include flex-center-c;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .fonctionnement {
+    @include flex-center-c;
+    max-width: 100%;
+    width: 100%;
+    .fonc-align-desktop {
+      max-width: 100%;
+      width: 90%;
+    }
+    .fonctionnement-widgets {
+      display: flex;
+      flex-direction: row;
+      max-width: 100%;
+      width: 100%;
+    }
+    .fonctionnement-widget {
+      position: relative;
+      max-width: 320px;
+      padding-right: 10px;
+    }
+    .widget-num {
+      position: absolute;
+      left: -10px;
+    }
+  }
+
+  .restaurant {
+    width: 100%;
+    max-width: 100%;
+    .restaurant-title {
+      left: 45px;
+    }
+    .restaurants-widgets {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+    .restaurants-widgets-links {
+      @include flex-center;
+    }
+    .restaurants-menu {
+      max-width: 490px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 50px;
+    justify-content: flex-end;
+    .footer-logo {
+      position: absolute;
+      right: 60px;
+      bottom: 15%;
+      width: 120px;
+    }
+    ul {
+      flex-direction: row;
+      padding-right: 300px;
+      .li-mention {
+        padding-left: 30px;
+      }
+    }
   }
 }
