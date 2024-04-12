@@ -1,7 +1,5 @@
 bien re-organiser les class/sous-class le sass
 
-transition on menu widgets : https://www.youtube.com/watch?v=cH0TC9gWiAg
-
 fake loader transition : https://youtu.be/0NeKbJfEUDA
 
 voir brief creatif
@@ -12,5 +10,8 @@ for menus, on hover align description and add '...' if the text width is to long
 
 fonctionnement et restaurant title fix position 
 
-animation vignette en hover
+long scroll hover section menu on mobile view
+
+dessert section descrition not aligned with h3
+
 

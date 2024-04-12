@@ -1,7 +1,11 @@
 // All menus css
 
+.loader {
+  transition: 1s;
+}
+
 .main-menu {
-  background-color: $grey-bg;
+  background-color: white;
   padding-bottom: 15px;
 }
 
@@ -38,6 +42,7 @@
   border-top-right-radius: 40px;
   background-color: $grey-bg;
   margin-top: -20px;
+  padding: 0px 2.5% 40px 2.5%;
 }
 
 .menu-img {
@@ -60,17 +65,16 @@
 }
 
 .choice-titles {
-  padding: 0 0 5px 15px;
+  padding: 0 0 5px 10px;
   text-transform: uppercase;
   font-weight: 300;
-  width: 20px;
 }
 
 .title-border {
   position: absolute;
   width: 40px;
-  border-bottom: solid 3px #99e2d0;
-  left: 15px;
+  border-bottom: solid 3px $light-green;
+  left: 22px;
 }
 
 .choice {
@@ -81,9 +85,8 @@
 
 .choice-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-
   background: none;
   color: inherit;
   border: none;
@@ -94,29 +97,64 @@
   background-color: white;
   box-shadow: 0px 4px 4px 0px #00000010;
   border-radius: 15px;
-  padding: 10px 5px 10px 15px;
-  width: 95%;
+  width: 100%;
   line-height: 22px;
-  h3 {
-    font-size: 18px;
-    font-weight: 500;
+  overflow: hidden;
+  padding: 0;
+  .btn-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    padding: 10px 5px 10px 15px;
+    h3 {
+      display: flex;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .description {
+      font-size: 15px;
+      font-weight: 300;
+      padding-right: 31px;
+    }
+    .price {
+      padding-right: 10px;
+      font-weight: 700;
+    }
   }
-  .description {
-    font-size: 15px;
-    font-weight: 300;
-    padding-right: 50px;
+}
+
+.btn-check {
+  width: 0px;
+  transition: 0.5s;
+}
+.choice-box:hover,
+.choice-box:focus {
+  .btn-check {
+    background-color: $light-green;
+    width: 62px;
+    height: 63.98px;
   }
-  .price {
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-    font-weight: 700;
-  }
+}
+
+.check-icon {
+  position: relative;
+  top: 22px;
+  right: 2px;
+  color: white;
+  font-size: 20px;
+  height: 64px;
 }
 
 .command-btn {
   @include flex-center;
 }
+
+.footer-desktop {
+  margin-top: -40px;
+}
+
+// Desktop
 
 @media (min-width: 480.08px) {
   .section-menu {
@@ -124,16 +162,18 @@
     .menu-title {
       display: flex;
       justify-content: center;
-      padding-right: 20px ;
+      padding-right: 20px;
       .heart-btn {
-        left: 510px;
+        position: relative;
+        top: -2px;
+        left: 25px;
       }
     }
     .choice-titles {
-      padding-left: 25px;
+      padding-left: 8px;
     }
     .title-border {
-      left: 25px;
+      left: 32px;
     }
   }
 }

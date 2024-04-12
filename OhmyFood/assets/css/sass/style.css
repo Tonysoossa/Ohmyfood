@@ -59,46 +59,6 @@
   display: none;
 }
 
-.restaurants-widgets a:after .lds-ring {
-  color: #9356dc;
-  box-sizing: border-box;
-}
-.restaurants-widgets a:after .lds-ring {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.restaurants-widgets a:after .lds-ring {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border: 8px solid currentColor;
-  border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: currentColor transparent transparent transparent;
-}
-.restaurants-widgets a:after .lds-ring:nth-child(1) {
-  animation-delay: -0.45s;
-}
-.restaurants-widgets a:after .lds-ring:nth-child(2) {
-  animation-delay: -0.3s;
-}
-.restaurants-widgets a:after .lds-ring:nth-child(3) {
-  animation-delay: -0.15s;
-}
-@keyframes lds-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /* Mobile device under 480px */
 body {
   display: flex;
@@ -430,6 +390,7 @@ footer li {
   .restaurant {
     width: 100%;
     max-width: 100%;
+    padding-bottom: 30px;
   }
   .restaurant .restaurant-title {
     left: 45px;
@@ -472,8 +433,12 @@ footer li {
     padding-left: 30px;
   }
 }
+.loader {
+  transition: 1s;
+}
+
 .main-menu {
-  background-color: #f6f6f6;
+  background-color: white;
   padding-bottom: 15px;
 }
 
@@ -510,6 +475,7 @@ footer li {
   border-top-right-radius: 40px;
   background-color: #f6f6f6;
   margin-top: -20px;
+  padding: 0px 2.5% 40px 2.5%;
 }
 
 .menu-img {
@@ -533,17 +499,16 @@ footer li {
 }
 
 .choice-titles {
-  padding: 0 0 5px 15px;
+  padding: 0 0 5px 10px;
   text-transform: uppercase;
   font-weight: 300;
-  width: 20px;
 }
 
 .title-border {
   position: absolute;
   width: 40px;
   border-bottom: solid 3px #99e2d0;
-  left: 15px;
+  left: 22px;
 }
 
 .choice {
@@ -557,7 +522,7 @@ footer li {
 
 .choice-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   background: none;
   color: inherit;
@@ -569,30 +534,62 @@ footer li {
   background-color: white;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.062745098);
   border-radius: 15px;
-  padding: 10px 5px 10px 15px;
-  width: 95%;
+  width: 100%;
   line-height: 22px;
+  overflow: hidden;
+  padding: 0;
 }
-.choice-box h3 {
+.choice-box .btn-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  padding: 10px 5px 10px 15px;
+}
+.choice-box .btn-content h3 {
+  display: flex;
   font-size: 18px;
   font-weight: 500;
 }
-.choice-box .description {
+.choice-box .btn-content .description {
   font-size: 15px;
   font-weight: 300;
-  padding-right: 50px;
+  padding-right: 31px;
 }
-.choice-box .price {
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
+.choice-box .btn-content .price {
+  padding-right: 10px;
   font-weight: 700;
+}
+
+.btn-check {
+  width: 0px;
+  transition: 0.5s;
+}
+
+.choice-box:hover .btn-check,
+.choice-box:focus .btn-check {
+  background-color: #99e2d0;
+  width: 62px;
+  height: 63.98px;
+}
+
+.check-icon {
+  position: relative;
+  top: 22px;
+  right: 2px;
+  color: white;
+  font-size: 20px;
+  height: 64px;
 }
 
 .command-btn {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-desktop {
+  margin-top: -40px;
 }
 
 @media (min-width: 480.08px) {
@@ -605,12 +602,14 @@ footer li {
     padding-right: 20px;
   }
   .section-menu .menu-title .heart-btn {
-    left: 510px;
+    position: relative;
+    top: -2px;
+    left: 25px;
   }
   .section-menu .choice-titles {
-    padding-left: 25px;
+    padding-left: 8px;
   }
   .section-menu .title-border {
-    left: 25px;
+    left: 32px;
   }
 }/*# sourceMappingURL=style.css.map */
