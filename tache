@@ -1,17 +1,18 @@
-bien re-organiser les class/sous-class le sass
 
-fake loader transition : https://youtu.be/0NeKbJfEUDA
+regle css text to long troncate (fix truc moche) and padd left on resize ? optionnal maybe
 
-voir brief creatif
 
-simuler un loader apres avoir selectionner un menu 
+widget width for desktop 
 
-for menus, on hover align description and add '...' if the text width is to long
 
-fonctionnement et restaurant title fix position 
+FIX 
 
-long scroll hover section menu on mobile view
+menu widgets tronc hide visual box
+restaurant title fix ?
+fonctionnement less width ?
+or like maquette but text not center ? (phone)
 
-dessert section descrition not aligned with h3
-
+BUG
+loader dsnt show after btn click
+on phone inspecteur width problem but not on normal inspecteur
 

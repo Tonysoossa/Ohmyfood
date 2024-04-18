@@ -34,9 +34,10 @@
       rel="stylesheet"
     />
   </head>
-  <body class="menu-body loader">
+  <body class="menu-body">
     <header class="menu-header">
       <div class="menu-header-div">
+        <div class="lds-ring"></div>
         <a href="/OhmyFood/index.html">
           <i class="fa-solid fa-arrow-left"></i>
         </a>
@@ -49,9 +50,9 @@
     </header>
     <main class="main-menu">
       <img
-        src="/OhmyFood/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-        alt="Photo d'un plat du restaurant"
-        class="menu-img"
+      src="/OhmyFood/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+      alt="Photo d'un plat du restaurant"
+      class="menu-img"
       />
       <section class="section-menu">
         <div class="menu-title">
@@ -61,8 +62,7 @@
             <i class="fa-regular fa-heart empty-heart"></i>
           </button>
         </div>
-        <h2 class="choice-titles">entrées</h2>
-        <div class="title-border"></div>
+        <h2 class="choice-titles-text choice-titles">entrées</h2>
         <div class="choice">
           <button type="button" class="choice-box">
             <div class="btn-content">
@@ -77,8 +77,6 @@
             </div>
           </button>
 
-
-
           <button type="button" class="choice-box">
             <div class="btn-content">
               <div class="choice-btn-left-content">
@@ -91,8 +89,6 @@
               <i class="fa-solid fa-circle-check check-icon"></i>
             </div>
           </button>
-
-
 
           <button type="button" class="choice-box">
             <div class="btn-content">
@@ -109,8 +105,8 @@
             </div>
           </button>
         </div>
-        <h2 class="choice-titles">Plats</h2>
-        <div class="title-border"></div>
+        <h2 class="choice-titles-text choice-titles">Plats</h2>
+
         <div class="choice">
           <button type="button" class="choice-box">
             <div class="btn-content">
@@ -122,7 +118,9 @@
               </div>
               <p class="price">40€</p>
             </div>
-            <div class="btn-check"><i class="fa-solid fa-circle-check check-icon"></i></div>
+            <div class="btn-check">
+              <i class="fa-solid fa-circle-check check-icon"></i>
+            </div>
           </button>
           <button type="button" class="choice-box">
             <div class="btn-content">
@@ -146,16 +144,13 @@
               </div>
               <p class="price">44€</p>
             </div>
-            <div class="btn-check"><i class="fa-solid fa-circle-check check-icon"></i></div>
+            <div class="btn-check">
+              <i class="fa-solid fa-circle-check check-icon"></i>
+            </div>
           </button>
         </div>
-        <h2 class="choice-titles">Desserts</h2>
-        <div class="title-border"></div>
+        <h2 class="choice-titles-text choice-titles">Desserts</h2>
         <div class="choice">
-
-
-
-
           <button type="button" class="choice-box">
             <div class="btn-content">
               <div class="choice-btn-left-content">
@@ -169,8 +164,6 @@
             </div>
           </button>
 
-
-
           <button type="button" class="choice-box">
             <div class="btn-content">
               <div class="choice-btn-left-content">
@@ -183,10 +176,6 @@
               <i class="fa-solid fa-circle-check check-icon"></i>
             </div>
           </button>
-
-
-
-
 
           <button type="button" class="choice-box">
             <div class="btn-content">
@@ -208,8 +197,8 @@
         </div>
       </section>
     </main>
-    <footer class="menu-footer footer-desktop">
-      <div class="footer-list">
+    <footer class="footer-desktop">
+      <div>
         <ul>
           <li>
             <div class="footer-logo">

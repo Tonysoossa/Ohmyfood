@@ -123,10 +123,15 @@ table {
   border-spacing: 0;
 }
 
-  a {
-    all: unset;
-  }
-  
-  a:focus {
-    outline: revert;
-  }
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+a:focus {
+  outline: revert;
+}
+
+button {
+  cursor: pointer;
+}

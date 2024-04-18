@@ -1,9 +1,5 @@
 // All menus css
 
-.loader {
-  transition: 1s;
-}
-
 .main-menu {
   background-color: white;
   padding-bottom: 15px;
@@ -20,11 +16,10 @@
   display: flex;
   align-items: center;
   font-size: 22px;
-}
-
-.menu-header-div a {
-  position: absolute;
-  left: 20px;
+  a {
+    position: absolute;
+    left: 20px;
+  }
 }
 
 .menu-h1 {
@@ -44,7 +39,6 @@
   margin-top: -20px;
   padding: 0px 2.5% 40px 2.5%;
 }
-
 .menu-img {
   display: flex;
   height: 280px;
@@ -64,17 +58,26 @@
   }
 }
 
-.choice-titles {
-  padding: 0 0 5px 10px;
+.choice-titles-text {
   text-transform: uppercase;
   font-weight: 300;
+  width: 150px;
+  line-height: 2;
+  padding-left: 8px;
 }
-
-.title-border {
+.choice-titles {
+  position: relative;
+  animation: slide 4.3s ease-in;
+}
+/* bottom line */
+.choice-titles::after {
+  content: "";
   position: absolute;
-  width: 40px;
-  border-bottom: solid 3px $light-green;
-  left: 22px;
+  background-color: $light-green;
+  width: 27%;
+  height: 3px;
+  bottom: 0;
+  left: 8px;
 }
 
 .choice {
@@ -101,23 +104,45 @@
   line-height: 22px;
   overflow: hidden;
   padding: 0;
+  animation: slide 4.3s ease-in;
+  @keyframes slide {
+    0% {
+      transform: translateY(1000px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
   .btn-content {
     display: flex;
     justify-content: space-between;
     align-items: end;
     width: 100%;
-    padding: 10px 5px 10px 15px;
+    padding: 10px 5px 10px 0px;
+    .choice-btn-left-content {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      overflow: hidden;
+      padding-left: 15px;
+    }
     h3 {
       display: flex;
       font-size: 18px;
       font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .description {
       font-size: 15px;
       font-weight: 300;
-      padding-right: 31px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .price {
+      padding-left: 15px;
       padding-right: 10px;
       font-weight: 700;
     }
@@ -156,7 +181,7 @@
 
 // Desktop
 
-@media (min-width: 480.08px) {
+@media (min-width: 769px) {
   .section-menu {
     width: 70%;
     .menu-title {
