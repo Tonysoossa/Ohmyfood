@@ -5,8 +5,6 @@ body {
   flex-direction: column;
   background: white;
   font-family: "Roboto", sans-serif;
-  // visibility: hidden;
-  // animation: fadeIn 0.3s forwards 2s;
 }
 
 @keyframes fadeIn {
@@ -31,7 +29,8 @@ body {
 header {
   @include flex-center-c;
   width: 100%;
-
+  visibility: hidden;
+  animation: fadeIn 0.3s forwards 2s;
 }
 
 h1 {
@@ -54,6 +53,8 @@ h1 {
 }
 
 nav {
+  visibility: hidden;
+  animation: fadeIn 0.3s forwards 2s;
   @include flex-center-c;
   background-color: $grey-bg;
   width: 100%;
@@ -76,6 +77,8 @@ nav {
 }
 
 .fonctionnement {
+  visibility: hidden;
+  animation: fadeIn 0.3s forwards 2s;
   position: relative;
   display: flex;
   align-items: center;
@@ -143,6 +146,8 @@ nav {
 }
 
 .restaurant {
+  visibility: hidden;
+  animation: fadeIn 0.3s forwards 2s;
   @include flex-center-c;
   position: relative;
   background-color: $grey-bg;
@@ -222,11 +227,12 @@ nav {
 }
 
 footer {
+  visibility: hidden;
+  animation: fadeIn 0.3s forwards 2s;
   display: flex;
   background-color: #353535;
   color: white;
-  padding: 30px 0px 30px 30px;
-  width: 100%;
+  padding: 30px 0px 30px 30px;  
   ul {
     display: flex;
     flex-direction: column;
@@ -250,7 +256,7 @@ footer {
 
 // Desktop device //
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   body {
     @include flex-center-c;
   }
@@ -288,12 +294,11 @@ footer {
     }
     .fonctionnement-widget {
       width: 100%;
-      
+
       padding-right: 10px;
     }
     .fonc-box {
       gap: 15px;
-      
     }
   }
 
@@ -334,6 +339,7 @@ footer {
     flex-direction: row;
     padding-top: 50px;
     justify-content: flex-end;
+    width: 100%;
     .footer-logo {
       position: absolute;
       right: 60px;

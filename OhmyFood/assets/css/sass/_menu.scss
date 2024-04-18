@@ -1,6 +1,8 @@
 // All menus css
 
 .main-menu {
+  visibility: hidden;
+  animation: fadeIn 0.3s forwards 2s;
   background-color: white;
   margin-bottom: -20px;
 }
@@ -67,8 +69,9 @@
 }
 .choice-titles {
   position: relative;
-  animation: slide ease-in 2.7s;
+  animation: slide ease-in 3s;
 }
+
 /* bottom line */
 .choice-titles::after {
   content: "";
@@ -104,7 +107,7 @@
   overflow: hidden;
   padding: 0;
   position: relative;
-  animation: slide ease-in 2.7s;
+  animation: slide ease-in 3s;
 
   @keyframes slide {
     0% {
@@ -141,6 +144,7 @@
       font-weight: 300;
       white-space: nowrap;
       overflow: hidden;
+      max-width: 280px;
       text-overflow: ellipsis;
     }
     .price {
@@ -179,7 +183,7 @@
 
 // Desktop
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .section-menu {
     width: 70%;
     .menu-title {
@@ -198,5 +202,9 @@
     .title-border {
       left: 32px;
     }
+  }
+
+  footer {
+    width: 100%;
   }
 }
