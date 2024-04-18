@@ -78,7 +78,7 @@
   margin: 8px;
   border: 8px solid currentColor;
   border-radius: 50%;
-  animation: lds-ring cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: lds-ring cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite;
   border-color: currentColor transparent transparent transparent;
 }
 
@@ -91,7 +91,7 @@
   }
 }
 .lds-ring {
-  transition-duration: 3s;
+  transition-duration: 2s;
   animation-duration: 1s;
   visibility: hidden;
 }
@@ -102,8 +102,6 @@ body {
   flex-direction: column;
   background: white;
   font-family: "Roboto", sans-serif;
-  visibility: hidden;
-  animation: fadeIn 0.3s forwards 3s;
 }
 
 @keyframes fadeIn {
@@ -451,7 +449,7 @@ footer .footer-logo {
 }
 .main-menu {
   background-color: white;
-  padding-bottom: 15px;
+  margin-bottom: -20px;
 }
 
 .menu-body {
@@ -519,7 +517,7 @@ footer .footer-logo {
 
 .choice-titles {
   position: relative;
-  animation: slide 4.3s ease-in;
+  animation: slide ease-in 2.7s;
 }
 
 /* bottom line */
@@ -552,7 +550,6 @@ footer .footer-logo {
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  position: relative;
   background-color: white;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.062745098);
   border-radius: 15px;
@@ -560,14 +557,15 @@ footer .footer-logo {
   line-height: 22px;
   overflow: hidden;
   padding: 0;
-  animation: slide 4.3s ease-in;
+  position: relative;
+  animation: slide ease-in 2.7s;
 }
 @keyframes slide {
   0% {
-    transform: translateY(1000px);
+    transform: translateX(700px);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateX(0px);
   }
 }
 .choice-box .btn-content {
@@ -630,10 +628,6 @@ footer .footer-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer-desktop {
-  margin-top: -40px;
 }
 
 @media (min-width: 769px) {

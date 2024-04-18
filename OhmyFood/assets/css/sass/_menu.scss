@@ -2,7 +2,7 @@
 
 .main-menu {
   background-color: white;
-  padding-bottom: 15px;
+  margin-bottom: -20px;
 }
 
 .menu-body {
@@ -67,7 +67,7 @@
 }
 .choice-titles {
   position: relative;
-  animation: slide 4.3s ease-in;
+  animation: slide ease-in 2.7s;
 }
 /* bottom line */
 .choice-titles::after {
@@ -96,7 +96,6 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  position: relative;
   background-color: white;
   box-shadow: 0px 4px 4px 0px #00000010;
   border-radius: 15px;
@@ -104,15 +103,18 @@
   line-height: 22px;
   overflow: hidden;
   padding: 0;
-  animation: slide 4.3s ease-in;
+  position: relative;
+  animation: slide ease-in 2.7s;
+
   @keyframes slide {
     0% {
-      transform: translateY(1000px);
+      transform: translateX(700px);
     }
     100% {
-      transform: translateY(0px);
+      transform: translateX(0px);
     }
   }
+
   .btn-content {
     display: flex;
     justify-content: space-between;
@@ -173,10 +175,6 @@
 
 .command-btn {
   @include flex-center;
-}
-
-.footer-desktop {
-  margin-top: -40px;
 }
 
 // Desktop
