@@ -69,7 +69,6 @@
 }
 .choice-titles {
   position: relative;
-  animation: slide ease-in 3s;
 }
 
 /* bottom line */
@@ -130,6 +129,8 @@
       align-items: start;
       overflow: hidden;
       padding-left: 15px;
+      max-width: 320px;
+      width: 100%;
     }
     h3 {
       display: flex;
@@ -144,7 +145,6 @@
       font-weight: 300;
       white-space: nowrap;
       overflow: hidden;
-      max-width: 280px;
       text-overflow: ellipsis;
     }
     .price {
@@ -154,7 +154,6 @@
     }
   }
 }
-
 .btn-check {
   width: 0px;
   transition: 0.5s;
@@ -165,6 +164,9 @@
     background-color: $light-green;
     width: 62px;
     height: 63.98px;
+  }
+  .btn-content {
+    // width: calc(100% - 62px);
   }
 }
 
