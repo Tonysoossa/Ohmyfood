@@ -7,6 +7,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.loader-content {
+  visibility: hidden;
+  animation: fadeIn 0.3s forwards 2s;
+  width: 100%;
+}
 @keyframes fadeIn {
   0% {
     transform: scale(0, 0);
@@ -29,8 +34,6 @@ body {
 header {
   @include flex-center-c;
   width: 100%;
-  visibility: hidden;
-  animation: fadeIn 0.3s forwards 2s;
 }
 
 h1 {
@@ -53,8 +56,6 @@ h1 {
 }
 
 nav {
-  visibility: hidden;
-  animation: fadeIn 0.3s forwards 2s;
   @include flex-center-c;
   background-color: $grey-bg;
   width: 100%;
@@ -77,8 +78,6 @@ nav {
 }
 
 .fonctionnement {
-  visibility: hidden;
-  animation: fadeIn 0.3s forwards 2s;
   position: relative;
   display: flex;
   align-items: center;
@@ -221,8 +220,6 @@ nav {
 }
 
 footer {
-  visibility: hidden;
-  animation: fadeIn 0.3s forwards 2s;
   display: flex;
   background-color: #353535;
   color: white;
