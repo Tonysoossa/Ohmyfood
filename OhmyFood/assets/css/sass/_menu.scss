@@ -147,7 +147,6 @@
       // width: 100%;
     }
     h3 {
-      display: flex;
       font-size: 18px;
       font-weight: 500;
     }
@@ -173,10 +172,6 @@
     width: 62px;
     height: 63.98px;
   }
-  // .btn-content {
-  //   width: calc(100% - 62px);
-  //   transition: 0.5s;
-  // }
 }
 .check-icon {
   position: relative;
@@ -191,6 +186,12 @@
   @include flex-center;
 }
 
+footer {
+  ul {
+    padding-left: 20px;
+  }
+}
+
 @media (max-width: 375.6px) {
   .choice-box {
     h3 {
@@ -203,25 +204,21 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      max-width: 200px;
+      max-width: 250px;
     }
-  }
-  // .btn-check {
-  //   position: absolute;
-  //   right: 0;
-  // }
-  .choice-btn-left-content {
-    width: calc(100% - 66px);
   }
 }
 
 @media (max-width: 320.6px) {
   .choice-box {
-    h3, .description {
+    h3,
+    .description {
       max-width: 170px;
     }
   }
 }
+
+
 // Desktop
 
 @media (min-width: 768.8px) {

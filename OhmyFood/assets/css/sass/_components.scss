@@ -74,9 +74,9 @@
 .lds-ring {
   color: $violet;
   box-sizing: border-box;
-  display: flex;
   position: absolute;
   top: 15%;
+  left: calc(50% - 50px);
   width: 100px;
   height: 100px;
   margin: 8px;
@@ -98,14 +98,5 @@
   }
 }
 
-@media (max-width: 425.6px) {
-  .lds-ring {
-    left: 35%;
-  }
-}
-@media (max-width: 768.7px) {
-  .lds-ring {
-    left: 42.5%;
-  }
-}
+
 
