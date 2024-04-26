@@ -1,21 +1,10 @@
 
-
-
 FIX 
-widget width for desktop 
 
-restaurant title fix ?
-
-fonctionnement less width ?
-or like maquette but text not center ? (phone)
+fonc width over 475 px ?
 
 
-enveloper le conetnu sauf loader dans une dive pour le fade in
+check btn show from center and not sliding (maybe absolute stick on right) and width reglage when  close to the descption
 
-entre plat dessert delay
 
-infinite scrrol dev tool fix
-
-check btn show from center and not sliding (maybe absolute stick on right)
-
-breakpoint restau gap
+padding right on inspect tool 

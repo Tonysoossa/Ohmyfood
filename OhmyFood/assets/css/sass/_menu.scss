@@ -28,6 +28,9 @@
   font-style: italic;
   font-family: "Shrikhand", sans-serif;
   padding-right: 20px;
+  span {
+    text-transform: uppercase;
+  }
 }
 
 .section-menu {
@@ -86,6 +89,22 @@
   gap: 10px;
 }
 
+.entries-section {
+  position: relative;
+  animation: slide ease-in 0.2s;
+  animation-duration: 0.6s;
+}
+.plats-section {
+  position: relative;
+  animation: slide ease-in 0.4s;
+  animation-duration: 0.9s;
+}
+.desserts-section {
+  position: relative;
+  animation: slide ease-in 0.6s;
+  animation-duration: 1.3s;
+}
+
 .choice-box {
   display: flex;
   flex-direction: row;
@@ -104,8 +123,6 @@
   overflow: hidden;
   padding: 0;
   position: relative;
-  animation: slide ease-in 3s;
-
   @keyframes slide {
     0% {
       transform: translateX(700px);
@@ -114,7 +131,6 @@
       transform: translateX(0px);
     }
   }
-
   .btn-content {
     display: flex;
     justify-content: space-between;
@@ -125,25 +141,19 @@
       display: flex;
       flex-direction: column;
       align-items: start;
-      overflow: hidden;
+      // overflow: hidden;
       padding-left: 15px;
-      max-width: 320px;
-      width: 100%;
+      // max-width: 320px;
+      // width: 100%;
     }
     h3 {
       display: flex;
       font-size: 18px;
       font-weight: 500;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
     .description {
       font-size: 15px;
       font-weight: 300;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
     .price {
       padding-left: 15px;
@@ -163,11 +173,11 @@
     width: 62px;
     height: 63.98px;
   }
-  .btn-content {
-    // width: calc(100% - 62px);
-  }
+  // .btn-content {
+  //   width: calc(100% - 62px);
+  //   transition: 0.5s;
+  // }
 }
-
 .check-icon {
   position: relative;
   top: 22px;
@@ -181,9 +191,40 @@
   @include flex-center;
 }
 
+@media (max-width: 375.6px) {
+  .choice-box {
+    h3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 240px;
+    }
+    .description {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 200px;
+    }
+  }
+  // .btn-check {
+  //   position: absolute;
+  //   right: 0;
+  // }
+  .choice-btn-left-content {
+    width: calc(100% - 66px);
+  }
+}
+
+@media (max-width: 320.6px) {
+  .choice-box {
+    h3, .description {
+      max-width: 170px;
+    }
+  }
+}
 // Desktop
 
-@media (min-width: 768px) {
+@media (min-width: 768.8px) {
   .section-menu {
     width: 70%;
     .menu-title {
