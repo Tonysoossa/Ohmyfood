@@ -644,7 +644,7 @@ footer .footer-logo {
 .check-icon {
   position: relative;
   top: 22px;
-  right: 2px;
+  left: 16.5px;
   color: white;
   font-size: 20px;
   height: 64px;

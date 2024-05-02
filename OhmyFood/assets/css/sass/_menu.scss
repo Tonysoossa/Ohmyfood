@@ -123,6 +123,7 @@
   overflow: hidden;
   padding: 0;
   position: relative;
+
   @keyframes slide {
     0% {
       transform: translateX(700px);
@@ -131,6 +132,7 @@
       transform: translateX(0px);
     }
   }
+
   .btn-content {
     display: flex;
     justify-content: space-between;
@@ -173,7 +175,7 @@
 .check-icon {
   position: relative;
   top: 22px;
-  right: 2px;
+  left: 16.5px;
   color: white;
   font-size: 20px;
   height: 64px;
