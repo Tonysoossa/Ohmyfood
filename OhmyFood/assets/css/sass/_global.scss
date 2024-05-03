@@ -1,4 +1,4 @@
-/* Mobile device under 480px */
+/* Mobile device */
 body {
   display: flex;
   flex-direction: column;
@@ -11,6 +11,7 @@ body {
   animation: fadeIn 0.3s forwards 2s;
   width: 100%;
 }
+
 @keyframes fadeIn {
   0% {
     transform: scale(0, 0);

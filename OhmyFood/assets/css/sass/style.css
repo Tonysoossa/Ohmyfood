@@ -93,7 +93,7 @@
   }
 }
 
-/* Mobile device under 480px */
+/* Mobile device */
 body {
   display: flex;
   flex-direction: column;
